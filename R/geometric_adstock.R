@@ -7,6 +7,7 @@
 #' @param log_first If TRUE log will be calculated based on the flow variables.
 #' @return The ad stock transformation of x
 #' @examples
+#' x <- runif(100, 1, 100)
 #' adstock_x <- geometric_adstock(x, lambda = 0.8, log = TRUE, fischer = FALSE, log_first = FALSE)
 #' @export
 geometric_adstock <- function(x, lambda, log = FALSE, fischer = FALSE, log_first = FALSE) {
